@@ -13,6 +13,15 @@
 		C2965EB41D28379900936FF6 /* HodorChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2965EB21D28379900936FF6 /* HodorChat.xcdatamodeld */; };
 		C2965EB61D28379900936FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2965EB51D28379900936FF6 /* Assets.xcassets */; };
 		C2965EB91D28379900936FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2965EB71D28379900936FF6 /* LaunchScreen.storyboard */; };
+		C2965EC11D2837D900936FF6 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965EC01D2837D900936FF6 /* Firebase.framework */; };
+		C2965EC31D2837EA00936FF6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965EC21D2837EA00936FF6 /* libicucore.tbd */; };
+		C2965EC51D2837F100936FF6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965EC41D2837F100936FF6 /* libc++.tbd */; };
+		C2965EC71D2837F800936FF6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965EC61D2837F800936FF6 /* CFNetwork.framework */; };
+		C2965EC91D2837FF00936FF6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965EC81D2837FF00936FF6 /* Security.framework */; };
+		C2965ECB1D28380500936FF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECA1D28380500936FF6 /* SystemConfiguration.framework */; };
+		C2965ED01D2838E800936FF6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECD1D2838E800936FF6 /* FBSDKCoreKit.framework */; };
+		C2965ED11D2838E800936FF6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECE1D2838E800936FF6 /* FBSDKLoginKit.framework */; };
+		C2965ED21D2838E800936FF6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECF1D2838E800936FF6 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		C2965EB51D28379900936FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2965EB81D28379900936FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2965EBA1D28379900936FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2965EC01D2837D900936FF6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		C2965EC21D2837EA00936FF6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		C2965EC41D2837F100936FF6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C2965EC61D2837F800936FF6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C2965EC81D2837FF00936FF6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C2965ECA1D28380500936FF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C2965ECD1D2838E800936FF6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C2965ECE1D2838E800936FF6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C2965ECF1D2838E800936FF6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2965ECB1D28380500936FF6 /* SystemConfiguration.framework in Frameworks */,
+				C2965EC91D2837FF00936FF6 /* Security.framework in Frameworks */,
+				C2965EC71D2837F800936FF6 /* CFNetwork.framework in Frameworks */,
+				C2965EC51D2837F100936FF6 /* libc++.tbd in Frameworks */,
+				C2965ED01D2838E800936FF6 /* FBSDKCoreKit.framework in Frameworks */,
+				C2965ED21D2838E800936FF6 /* FBSDKShareKit.framework in Frameworks */,
+				C2965EC31D2837EA00936FF6 /* libicucore.tbd in Frameworks */,
+				C2965ED11D2838E800936FF6 /* FBSDKLoginKit.framework in Frameworks */,
+				C2965EC11D2837D900936FF6 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +83,7 @@
 		C2965EAA1D28379900936FF6 /* HodorChat */ = {
 			isa = PBXGroup;
 			children = (
+				C2965ECC1D28382800936FF6 /* FrameWork */,
 				C2965EAB1D28379900936FF6 /* AppDelegate.swift */,
 				C2965EAD1D28379900936FF6 /* ViewController.swift */,
 				C2965EAF1D28379900936FF6 /* Main.storyboard */,
@@ -65,6 +93,22 @@
 				C2965EB21D28379900936FF6 /* HodorChat.xcdatamodeld */,
 			);
 			path = HodorChat;
+			sourceTree = "<group>";
+		};
+		C2965ECC1D28382800936FF6 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				C2965ECD1D2838E800936FF6 /* FBSDKCoreKit.framework */,
+				C2965ECE1D2838E800936FF6 /* FBSDKLoginKit.framework */,
+				C2965ECF1D2838E800936FF6 /* FBSDKShareKit.framework */,
+				C2965ECA1D28380500936FF6 /* SystemConfiguration.framework */,
+				C2965EC81D2837FF00936FF6 /* Security.framework */,
+				C2965EC61D2837F800936FF6 /* CFNetwork.framework */,
+				C2965EC41D2837F100936FF6 /* libc++.tbd */,
+				C2965EC21D2837EA00936FF6 /* libicucore.tbd */,
+				C2965EC01D2837D900936FF6 /* Firebase.framework */,
+			);
+			name = FrameWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -242,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -253,6 +297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HodorChat",
+				);
 				INFOPLIST_FILE = HodorChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateus.HodorChat;
@@ -264,6 +312,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HodorChat",
+				);
 				INFOPLIST_FILE = HodorChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateus.HodorChat;
