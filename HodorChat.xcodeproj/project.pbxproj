@@ -22,6 +22,7 @@
 		C2965ED01D2838E800936FF6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECD1D2838E800936FF6 /* FBSDKCoreKit.framework */; };
 		C2965ED11D2838E800936FF6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECE1D2838E800936FF6 /* FBSDKLoginKit.framework */; };
 		C2965ED21D2838E800936FF6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECF1D2838E800936FF6 /* FBSDKShareKit.framework */; };
+		C2965ED41D28423700936FF6 /* CONSTANTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2965ED31D28423700936FF6 /* CONSTANTS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C2965ECD1D2838E800936FF6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C2965ECE1D2838E800936FF6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C2965ECF1D2838E800936FF6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		C2965ED31D28423700936FF6 /* CONSTANTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CONSTANTS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		C2965EAA1D28379900936FF6 /* HodorChat */ = {
 			isa = PBXGroup;
 			children = (
+				C2965ED31D28423700936FF6 /* CONSTANTS.swift */,
 				C2965ECC1D28382800936FF6 /* FrameWork */,
 				C2965EAB1D28379900936FF6 /* AppDelegate.swift */,
 				C2965EAD1D28379900936FF6 /* ViewController.swift */,
@@ -185,6 +188,7 @@
 				C2965EB41D28379900936FF6 /* HodorChat.xcdatamodeld in Sources */,
 				C2965EAE1D28379900936FF6 /* ViewController.swift in Sources */,
 				C2965EAC1D28379900936FF6 /* AppDelegate.swift in Sources */,
+				C2965ED41D28423700936FF6 /* CONSTANTS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
