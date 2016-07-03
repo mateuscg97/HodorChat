@@ -26,6 +26,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="HTW-CQ-fTL" kind="show" identifier="login" id="eoD-3D-Urw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,10 +47,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ePv-H1-Qyg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPw-S8-xCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="-208"/>
+            <point key="canvasLocation" x="3056" y="-208"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Ib-4i-kVt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HTW-CQ-fTL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fiV-ch-XlF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sKA-Hd-NS6" kind="relationship" relationship="rootViewController" id="UAz-RR-YRh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISj-Xd-uqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2244" y="-208"/>
         </scene>
     </scenes>
 </document>

@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
+import JSQMessagesViewController
 
 class ViewController: UIViewController {
 
@@ -56,14 +57,39 @@ class ViewController: UIViewController {
     
     func getFacebookProfile(authData: FAuthData){
         /*id, name, first_name, last_name, age_range, link, gender, locale, timezone, updated_time, verified*/
-        
         if((FBSDKAccessToken.currentAccessToken()) != nil){
+            
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email, gender"]).startWithCompletionHandler({ (connection, result, error) -> Void in
                 if (error == nil){
-                    print(result)
-                    FIREBASE_USERS.childByAppendingPath(authData.uid).setValue(result)
+                    
+                    if let resultDict = result as? Dictionary<String, String>{
+                        
+                        self.performSegueWithIdentifier(LOGIN_SEGUE, sender: resultDict)
+                        FIREBASE_USERS.childByAppendingPath(authData.uid).setValue(result)
+                    }
                 }
             })
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == LOGIN_SEGUE{
+            
+            if let navVC = segue.destinationViewController as? UINavigationController{
+                
+                if let chatVC = navVC.viewControllers.first as? ChatViewController{
+                    
+                    if let senderDict = sender as? Dictionary<String, String>{
+                        
+                        chatVC.senderDisplayName = senderDict["name"]
+                        chatVC.senderId = FIREBASE.authData.uid
+                        chatVC.user = senderDict
+                    }
+                }
+            }
+        }else{
+            print("segue.identifier wrong")
         }
     }
 }
