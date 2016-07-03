@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C26D556B1D28BA5A00D4339F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D556A1D28BA5A00D4339F /* ChatViewController.swift */; };
 		C2965EAC1D28379900936FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2965EAB1D28379900936FF6 /* AppDelegate.swift */; };
 		C2965EAE1D28379900936FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2965EAD1D28379900936FF6 /* ViewController.swift */; };
 		C2965EB11D28379900936FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2965EAF1D28379900936FF6 /* Main.storyboard */; };
@@ -23,9 +24,15 @@
 		C2965ED11D2838E800936FF6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECE1D2838E800936FF6 /* FBSDKLoginKit.framework */; };
 		C2965ED21D2838E800936FF6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2965ECF1D2838E800936FF6 /* FBSDKShareKit.framework */; };
 		C2965ED41D28423700936FF6 /* CONSTANTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2965ED31D28423700936FF6 /* CONSTANTS.swift */; };
+		FEE0A8696AE1409B8DCFFDD3 /* Pods_HodorChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D191F1CA05B9DA0F7F0CC3B /* Pods_HodorChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059538749C2AA094912F7925 /* Pods-HodorChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HodorChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HodorChat/Pods-HodorChat.debug.xcconfig"; sourceTree = "<group>"; };
+		2D094DF801354ABFD8EC5999 /* Pods-HodorChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HodorChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HodorChat/Pods-HodorChat.release.xcconfig"; sourceTree = "<group>"; };
+		5D191F1CA05B9DA0F7F0CC3B /* Pods_HodorChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HodorChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26D556A1D28BA5A00D4339F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		C26D556C1D28BA7300D4339F /* HodorChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HodorChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		C2965EA81D28379900936FF6 /* HodorChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HodorChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2965EAB1D28379900936FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2965EAD1D28379900936FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,17 +67,38 @@
 				C2965EC31D2837EA00936FF6 /* libicucore.tbd in Frameworks */,
 				C2965ED11D2838E800936FF6 /* FBSDKLoginKit.framework in Frameworks */,
 				C2965EC11D2837D900936FF6 /* Firebase.framework in Frameworks */,
+				FEE0A8696AE1409B8DCFFDD3 /* Pods_HodorChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		328A31B83E2B445B19CA4BDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				059538749C2AA094912F7925 /* Pods-HodorChat.debug.xcconfig */,
+				2D094DF801354ABFD8EC5999 /* Pods-HodorChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C26D55691D28BA4000D4339F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2965EAD1D28379900936FF6 /* ViewController.swift */,
+				C26D556A1D28BA5A00D4339F /* ChatViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		C2965E9F1D28379900936FF6 = {
 			isa = PBXGroup;
 			children = (
 				C2965EAA1D28379900936FF6 /* HodorChat */,
 				C2965EA91D28379900936FF6 /* Products */,
+				328A31B83E2B445B19CA4BDA /* Pods */,
+				DFC907469EEBEBB8A70C82C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +116,8 @@
 				C2965ED31D28423700936FF6 /* CONSTANTS.swift */,
 				C2965ECC1D28382800936FF6 /* FrameWork */,
 				C2965EAB1D28379900936FF6 /* AppDelegate.swift */,
-				C2965EAD1D28379900936FF6 /* ViewController.swift */,
+				C26D556C1D28BA7300D4339F /* HodorChat-Bridging-Header.h */,
+				C26D55691D28BA4000D4339F /* Controller */,
 				C2965EAF1D28379900936FF6 /* Main.storyboard */,
 				C2965EB51D28379900936FF6 /* Assets.xcassets */,
 				C2965EB71D28379900936FF6 /* LaunchScreen.storyboard */,
@@ -114,6 +143,14 @@
 			name = FrameWork;
 			sourceTree = "<group>";
 		};
+		DFC907469EEBEBB8A70C82C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D191F1CA05B9DA0F7F0CC3B /* Pods_HodorChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2965EBD1D28379900936FF6 /* Build configuration list for PBXNativeTarget "HodorChat" */;
 			buildPhases = (
+				4DEBDE255194CEA697252E7B /* 📦 Check Pods Manifest.lock */,
 				C2965EA41D28379900936FF6 /* Sources */,
 				C2965EA51D28379900936FF6 /* Frameworks */,
 				C2965EA61D28379900936FF6 /* Resources */,
+				5D1613419580952AAD3D61AA /* 📦 Embed Pods Frameworks */,
+				C06A9B3A6A98A1E75853187A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +220,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DEBDE255194CEA697252E7B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D1613419580952AAD3D61AA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HodorChat/Pods-HodorChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06A9B3A6A98A1E75853187A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HodorChat/Pods-HodorChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2965EA41D28379900936FF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,6 +276,7 @@
 				C2965EB41D28379900936FF6 /* HodorChat.xcdatamodeld in Sources */,
 				C2965EAE1D28379900936FF6 /* ViewController.swift in Sources */,
 				C2965EAC1D28379900936FF6 /* AppDelegate.swift in Sources */,
+				C26D556B1D28BA5A00D4339F /* ChatViewController.swift in Sources */,
 				C2965ED41D28423700936FF6 /* CONSTANTS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +388,10 @@
 		};
 		C2965EBE1D28379900936FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 059538749C2AA094912F7925 /* Pods-HodorChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HodorChat",
@@ -309,13 +400,17 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateus.HodorChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HodorChat/HodorChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C2965EBF1D28379900936FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D094DF801354ABFD8EC5999 /* Pods-HodorChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HodorChat",
@@ -324,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateus.HodorChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HodorChat/HodorChat-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -346,6 +442,7 @@
 				C2965EBF1D28379900936FF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

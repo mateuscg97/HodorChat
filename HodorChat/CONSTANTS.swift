@@ -10,3 +10,6 @@ import Foundation
 import Firebase
 
 let FIREBASE = Firebase(url: "https://hodorchat.firebaseio.com")
+let FIREBASE_USERS = FIREBASE.childByAppendingPath("Users")
+
+let LOGIN_SEGUE = "loginSegue"

@@ -15,8 +15,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginFacebook()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func facebookLogin(sender: AnyObject) {
+        loginFacebook()
+    }
     func loginFacebook(){
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logInWithReadPermissions(["public_profile", "email", "user_friends"], handler: {
@@ -46,24 +47,24 @@ class ViewController: UIViewController {
                         } else {
                             
                             print("Logged in! \(authData)")
-                            self.getFacebookProfile()
+                            self.getFacebookProfile(authData)
                         }
                 })
             }
         })
     }
     
-    func getFacebookProfile(){
-        /*id, name, first_name, last_name, age_range, link, gender, locale, timezone,updated_time, verified*/
+    func getFacebookProfile(authData: FAuthData){
+        /*id, name, first_name, last_name, age_range, link, gender, locale, timezone, updated_time, verified*/
         
         if((FBSDKAccessToken.currentAccessToken()) != nil){
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email, gender"]).startWithCompletionHandler({ (connection, result, error) -> Void in
                 if (error == nil){
                     print(result)
+                    FIREBASE_USERS.childByAppendingPath(authData.uid).setValue(result)
                 }
             })
         }
     }
-    
 }
 
