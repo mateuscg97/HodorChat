@@ -16,6 +16,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if FIREBASE.authData.uid != nil{
+            getFacebookProfile(FIREBASE.authData)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,7 +79,7 @@ class ViewController: UIViewController {
         
         if segue.identifier == LOGIN_SEGUE{
             
-            if let navVC = segue.destinationViewController as? UINavigationController{
+            if let navVC = segue.destinationViewController as? NavigationController{
                 
                 if let chatVC = navVC.viewControllers.first as? ChatViewController{
                     

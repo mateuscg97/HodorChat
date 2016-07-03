@@ -48,7 +48,14 @@ class ChatViewController: JSQMessagesViewController {
     }
     
     
-    
+    override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
+        
+        let message = JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text)
+        
+        FIREBASE_Chat.childByAppendingPath(senderId).childByAutoId().setValue(["Message": text, "SenderID": senderId, "Sender Display Name": senderDisplayName, "Date": date.timeIntervalSince1970, "MessageType": "Text" ])
+        finishSendingMessage()
+        
+    }
     
     
     func createAvatar(senderID: String, SenderDisplayName: String, Color: UIColor){

@@ -11,5 +11,5 @@ import Firebase
 
 let FIREBASE = Firebase(url: "https://hodorchat.firebaseio.com")
 let FIREBASE_USERS = FIREBASE.childByAppendingPath("Users")
-
+let FIREBASE_Chat = FIREBASE.childByAppendingPath("Chat")
 let LOGIN_SEGUE = "login"
